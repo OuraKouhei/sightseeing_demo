@@ -8,6 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/script.js" async></script>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <title>デモサイト（観光）</title>
 </head>
 <body>
@@ -63,8 +65,8 @@
     <main>
         <div class="mainvisual">
             <div class="catch_area">
-                <h2 class="catch">時を忘れる空間へ</h2>
-                <p class="sub_catch">Timeless and extraordinary space for you.</p>
+                <h2 class="catch wow animated fadeInUp">時を忘れる空間へ</h2>
+                <p class="sub_catch wow animated fadeInUp" data-wow-delay="0.3s">Timeless and extraordinary space for you.</p>
             </div>
             <div class="square_button">
                 <a href="#">Reservation</a>
@@ -73,7 +75,7 @@
         <section id="sec1">
             <div class="inner">
                 <div class="title_area">
-                    <h2 class="sec_title"><img src="./images/top_img001.png" alt="About us"></h2>
+                    <h2 class="sec_title fadeRightTrigger"><img src="./images/top_img001.png" alt="About us"></h2>
                     <p class="sub_title">私たちについて</p>
                     <p class="title_text">
                         自然に囲まれ、<br>
@@ -94,7 +96,7 @@
         <div class="plx"></div>
         <section id="sec2">
             <div class="title_area">
-                <h2 class="sec_title"><img src="./images/top_img002.png" alt="Our Points"></h2>
+                <h2 class="sec_title fadeUpTrigger"><img src="./images/top_img002.png" alt="Our Points"></h2>
                 <p class="sub_title">施設の魅力</p>
             </div>
             <div class="content_area">
@@ -208,5 +210,8 @@
         </section>
         <div class="small">Copyright &copy;LOGO All Rights Reserved.</div>
     </footer>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
